@@ -24,7 +24,7 @@
 
 import java.util.Scanner;
 
-public class Problema15 {
+public class Atividade15 {
 
   public static void main(String[] args) {
 

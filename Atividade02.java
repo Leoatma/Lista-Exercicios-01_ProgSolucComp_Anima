@@ -9,7 +9,7 @@
 // Importando a ferramenta Scanner
 import java.util.Scanner;
 
-public class Problema2 {
+public class Atividade02 {
   public static void main(String[] args) {
 
     // Definindo variáveis

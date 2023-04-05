@@ -12,7 +12,7 @@
 
 import java.util.Scanner;
 
-public class Problema18 {
+public class Atividade18 {
 
   public static void main(String[] args) {
 

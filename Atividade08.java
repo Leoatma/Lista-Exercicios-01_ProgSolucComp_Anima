@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Problema8 {
+public class Atividade08 {
   public static void main(String[] args) {
 
     double salarioHoras;

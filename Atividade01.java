@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Problema1 {
+public class Atividade01 {
   public static void main(String[] args) {
 
     Scanner nameInput = new Scanner(System.in); // instanciando o Scanner

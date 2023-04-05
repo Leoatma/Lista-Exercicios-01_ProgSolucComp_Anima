@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class Problema12e13 {
+public class Atividade12_13 {
 
     public static void main(String[] args) {
 

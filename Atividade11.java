@@ -12,7 +12,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Problema11 {
+public class Atividade11 {
 
   public static void main(String[] args) {
 

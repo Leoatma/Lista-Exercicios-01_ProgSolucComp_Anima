@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Problema5 {
+public class Atividade05 {
   public static void main(String[] args) {
 
     // Definindo variáveis
