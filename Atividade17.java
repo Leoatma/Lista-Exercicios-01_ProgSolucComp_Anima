@@ -10,6 +10,7 @@
  *    comprar apenas latas de 18 litros;
  *    comprar apenas galões de 3,6 litros;
  *    misturar latas e galões, de forma que o desperdício de tinta seja menor. 
+ * 
  * Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
  * Data: 05/04/2023
  */
@@ -38,7 +39,7 @@ public class Atividade17 {
 
     // Calculando qtdade de litros de tinta necessários conforme cobertura (1L/6m²)
     // e adicionando 10%
-    qtdeLitros = area / 6 * 1.1;
+    qtdeLitros = area / 6;
 
     // Calculando e arredondando para um inteiro acima, a qtdade de latas de tinta
     // necessários
@@ -61,25 +62,25 @@ public class Atividade17 {
 
     // Calculando qual melhor alternativa, com 10% de folga e menor desperdício
 
-    double latasMistura = Math.floor(qtdeLitros / 18); // calculando a qtdade latas sem excedente, arredondando para
-                                                       // baixo
+    double qtdeLitrosMistura = qtdeLitros * 1.1;
 
-    double galoesMistura = Math.floor((qtdeLitros - latasMistura * 18) / 3.6);// calc qtdade de galoes a partir do
-                                                                              // excedente das latas
+    double latasMistura = Math.floor(qtdeLitrosMistura / 18);
+    // calculando a qtdade latas sem excedente, arredondando para baixo
 
-    double valTotalMistura;
+    double galoesMistura = Math.floor((qtdeLitrosMistura - latasMistura * 18) / 3.6);
+    // calc qtdade de galoes a partir do excedente das latas
 
-    // verificando se ainda haverá excedente após o calc dos galoes, se sim
-    // adicionar +1 pra n faltar tinta
+    // verificando se ainda haverá excedente após o calc dos galoes,
+    // se sim adicionar +1 pra n faltar tinta
     // e calculando o preço total a partir da mistura entre latas e galoes
     if (((qtdeLitros - (latasMistura * 18) % 3.6) != 0)) {
       galoesMistura += 1;
-      valTotalMistura = (latasMistura * 80) + (galoesMistura * 25);
-
-      System.out.println("Procurando economizar, e misturando entre galoes e latas, você poderia comprar " +
-          latasMistura + " latas e " + galoesMistura + " galoes de tinta," +
-          " o que daria o custo total de " + valTotalMistura + " reais.");
     }
 
+    double valTotalMistura = (latasMistura * 80) + (galoesMistura * 25);
+
+    System.out.println("Procurando economizar, e misturando entre galoes e latas, você poderia comprar " +
+        latasMistura + " latas e " + galoesMistura + " galoes de tinta," +
+        " o que daria o custo total de " + valTotalMistura + " reais.");
   }
 }
